@@ -18,7 +18,7 @@ export default function AboutPage() {
           tag="About Stillwater Orthodontics"
           title="Over 25 years of experience in the field."
           description="Stillwater Orthodontics was founded on a simple belief: orthodontic treatment should be an empowering, positive, and deeply personalized milestone for every child, teenager, and adult."
-          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
+          primaryButton={{ text: "Book a FREE Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Treatment Options", href: "/treatments" }}
           imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif?_wi=1"
         />
