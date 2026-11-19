@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom';
-
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 import { StyleProvider } from '@/components/ui/StyleProvider';
 import SiteBackgroundSlot from '@/components/ui/SiteBackgroundSlot';
@@ -10,53 +9,55 @@ export default function Layout() {
     <StyleProvider buttonVariant="default" siteBackground="none" heroBackground="none">
       <SiteBackgroundSlot />
       <NavbarInline
-                logo="Luxury Dental"
-                navItems={[
-                  { name: "Services", href: "#services" },
-                  { name: "About", href: "#about" },
-                  { name: "Features", href: "#features" },
-                  { name: "Testimonials", href: "#testimonials" },
-                  { name: "Contact", href: "#contact" },
-                ]}
-                ctaButton={{ text: "Schedule", href: "#contact" }}
-              />
-      <main className="flex-grow">
+        logo="Stillwater Orthodontics"
+        navItems={[
+          { name: "Home", href: "/" },
+          { name: "About", href: "/about" },
+          { name: "Treatments", href: "/treatments" },
+          { name: "For Families", href: "/for-families" },
+          { name: "Teens & Adults", href: "/for-teens-young-adults" },
+          { name: "First Visit", href: "/first-visit" },
+          { name: "Contact", href: "/contact" },
+        ]}
+        ctaButton={{ text: "Request a Consultation", href: "/contact" }}
+      />
+      <main className="flex-grow pt-24 md:pt-28">
         <Outlet />
       </main>
       <FooterSimple
-                brand="Luxury Dental Care"
-                columns={[
-                  {
-                    title: "Services",
-                    items: [
-                      { label: "Cosmetic Dentistry", href: "#services" },
-                      { label: "Dental Implants", href: "#services" },
-                      { label: "Orthodontics", href: "#services" },
-                      { label: "Restorative Care", href: "#services" },
-                    ],
-                  },
-                  {
-                    title: "Practice",
-                    items: [
-                      { label: "About Us", href: "#about" },
-                      { label: "Our Team", href: "#testimonials" },
-                      { label: "Technology", href: "#features" },
-                      { label: "Contact Us", href: "#contact" },
-                    ],
-                  },
-                  {
-                    title: "Connect",
-                    items: [
-                      { label: "Instagram", href: "#" },
-                      { label: "Facebook", href: "#" },
-                      { label: "Google Reviews", href: "#" },
-                      { label: "Smile Gallery", href: "#" },
-                    ],
-                  },
-                ]}
-                copyright="© 2025 Luxury Dental Care | Premium Dentistry Since 2005"
-                links={[{ label: "Privacy Policy" }, { label: "Terms of Service" }]}
-              />
+        brand="Stillwater Orthodontics"
+        columns={[
+          {
+            title: "Treatments",
+            items: [
+              { label: "Clear Aligners", href: "/treatments" },
+              { label: "Ceramic & Metal Braces", href: "/treatments" },
+              { label: "Pediatric Orthodontics", href: "/for-families" },
+              { label: "Teen & Adult Solutions", href: "/for-teens-young-adults" },
+            ],
+          },
+          {
+            title: "Patient Journey",
+            items: [
+              { label: "Your First Visit", href: "/first-visit" },
+              { label: "For Families", href: "/for-families" },
+              { label: "For Teens & Young Adults", href: "/for-teens-young-adults" },
+              { label: "Our Philosophy", href: "/about" },
+            ],
+          },
+          {
+            title: "Contact & Practice",
+            items: [
+              { label: "About Stillwater", href: "/about" },
+              { label: "Get in Touch", href: "/contact" },
+              { label: "[Clinic Address, Stillwater]", href: "/contact" },
+              { label: "[Phone Number]", href: "/contact" },
+            ],
+          },
+        ]}
+        copyright="© 2026 Stillwater Orthodontics. Exceptional Care for Families."
+        links={[{ label: "Privacy Policy", href: "#" }, { label: "Patient Terms", href: "#" }]}
+      />
     </StyleProvider>
   );
 }
