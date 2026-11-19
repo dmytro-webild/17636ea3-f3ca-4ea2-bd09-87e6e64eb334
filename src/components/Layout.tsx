@@ -16,7 +16,7 @@ export default function Layout() {
           { name: "About", href: "/about" },
           { name: "Cases by our Doctors", href: "/treatments" },
           { name: "The difference", href: "/for-families" },
-          { name: "Teens & Adults", href: "/for-teens-young-adults" },
+          { name: "Reviews", href: "/for-teens-young-adults" },
           { name: "First Visit", href: "/first-visit" },
           { name: "Contact", href: "/contact" },
         ]}
