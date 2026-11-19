@@ -69,8 +69,8 @@ export default function PricingPage() {
               primaryButton: { text: "Choose Ceramic Braces", href: "/contact" },
             },
             {
-              tag: "Clear Aligners",
-              price: "Starting at $4,500",
+              tag: "Braces or Clear Aligners",
+              price: "Starting at $6,500",
               description: "or ~$139/month with 0% interest financing",
               features: [
                 "Custom-molded transparent removable aligners",
