@@ -20,7 +20,7 @@ export default function Layout() {
           { name: "First Visit", href: "/first-visit" },
           { name: "Contact", href: "/contact" },
         ]}
-        ctaButton={{ text: "Book a Consultation Now", href: "/contact" }}
+        ctaButton={{ text: "Book a FREE Consultation Now", href: "/contact" }}
       />
       <main className="flex-grow pt-28 md:pt-32">
         <Outlet />
