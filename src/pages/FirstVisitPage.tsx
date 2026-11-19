@@ -113,7 +113,7 @@ We'll explore your smile goals, answer your questions, and provide complimentary
             {
               icon: "CreditCard",
               title: "No credit check",
-              value: "No Credit Check",
+              value: "No pressure",
             },
           ]}
         />
