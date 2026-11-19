@@ -45,7 +45,7 @@ export default function HomePage() {
             {
               title: "Welcoming & Personalized Experience",
               description: "A warm, compassionate clinic environment where every family feels heard, valued, and comfortably supported throughout their treatment.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about2.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about2.avif?_wi=3",
             },
           ]}
         />
@@ -66,7 +66,7 @@ export default function HomePage() {
             {
               title: "Modern Ceramic & Metal Braces",
               description: "Low-profile, sleek brackets engineered for maximum comfort, rapid movement, and customizable aesthetic expression.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service1.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service1.avif?_wi=2",
             },
           ]}
           bottomItem={{
