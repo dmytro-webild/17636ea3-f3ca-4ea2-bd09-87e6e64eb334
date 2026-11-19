@@ -69,7 +69,7 @@ export default function PricingPage() {
               primaryButton: { text: "Choose Ceramic Braces", href: "/contact" },
             },
             {
-              tag: "Invisalign® & Clear Aligners",
+              tag: "Clear Aligners",
               price: "Starting at $4,500",
               description: "or ~$139/month with 0% interest financing",
               features: [
