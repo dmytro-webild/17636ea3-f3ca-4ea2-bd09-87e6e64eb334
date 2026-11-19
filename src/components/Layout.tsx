@@ -14,7 +14,6 @@ export default function Layout() {
         navItems={[
           { name: "Home", href: "/" },
           { name: "About", href: "/about" },
-          { name: "Cases by our Doctors", href: "/treatments" },
           { name: "The difference", href: "/for-families" },
           { name: "Reviews", href: "/for-teens-young-adults" },
           { name: "First Visit", href: "/first-visit" },

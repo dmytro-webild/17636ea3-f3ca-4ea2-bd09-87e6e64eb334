@@ -15,10 +15,9 @@ interface NavItemProps {
   name: string;
   href: string;
   onClick?: () => void;
-  iconImage?: string;
 }
 
-const NavItem = ({ name, href, onClick, iconImage }: NavItemProps) => {
+const NavItem = ({ name, href, onClick }: NavItemProps) => {
   const handleClick = useButtonClick(href, onClick);
   const location = useLocation();
   const isActive = location.pathname === href;
@@ -27,19 +26,12 @@ const NavItem = ({ name, href, onClick, iconImage }: NavItemProps) => {
     <a
       href={href}
       onClick={handleClick}
-      className={`relative text-sm xl:text-base transition-colors duration-200 flex items-center gap-1.5 ${
+      className={`relative py-1 text-sm xl:text-base font-medium transition-colors duration-200 inline-flex items-center whitespace-nowrap ${
         isActive
-          ? "text-primary-cta font-medium after:w-full"
+          ? "text-primary-cta after:w-full"
           : "text-foreground hover:text-primary-cta after:w-0"
       } after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary-cta after:transition-all after:duration-300 hover:after:w-full`}
     >
-      {iconImage && (
-        <img
-          src={iconImage}
-          alt=""
-          className="h-5 w-5 rounded-full object-cover shrink-0 inline-block"
-        />
-      )}
       <span>{name}</span>
     </a>
   );
@@ -52,6 +44,7 @@ const NavbarInline = ({ logo, logoImage, navItems, ctaButton }: NavbarInlineProp
   return (
     <nav data-section="navbar" className="fixed z-[100] top-4 left-1/2 -translate-x-1/2 w-content-width">
       <div className="flex items-center justify-between p-2.5 xl:p-3 rounded-2xl backdrop-blur-md card border border-border/40 shadow-lg">
+        {/* Brand Logo Anchor */}
         <a
           href="/"
           onClick={handleLogoClick}
@@ -71,28 +64,28 @@ const NavbarInline = ({ logo, logoImage, navItems, ctaButton }: NavbarInlineProp
           <span className="font-extrabold tracking-wider text-xs sm:text-sm md:text-base xl:text-lg">{logo}</span>
         </a>
 
-        {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-6 xl:gap-8">
-          {navItems.map((item) => (
-            <NavItem
-              key={item.name}
-              name={item.name}
-              href={item.href}
-              iconImage={item.name === "Home" ? logoImage : undefined}
-            />
-          ))}
-        </div>
-
-        <div className="flex items-center gap-2">
-          <div className="hidden sm:block">
+        {/* Navigation Menu & Actions on the Right */}
+        <div className="hidden lg:flex items-center gap-5 xl:gap-7 shrink-0">
+          <nav className="flex items-center gap-5 xl:gap-7">
+            {navItems.map((item) => (
+              <NavItem
+                key={item.name}
+                name={item.name}
+                href={item.href}
+              />
+            ))}
+          </nav>
+          <div className="hidden sm:block pl-2 border-l border-border/30">
             <Button text={ctaButton.text} href={ctaButton.href} variant="primary" animate={false} />
           </div>
+        </div>
 
-          {/* Mobile Menu Button */}
+        {/* Mobile Menu Button */}
+        <div className="flex items-center gap-2 lg:hidden">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-foreground hover:text-primary-cta lg:hidden rounded-lg transition-colors focus:outline-none"
+            className="p-2 text-foreground hover:text-primary-cta rounded-lg transition-colors focus:outline-none"
             aria-label="Toggle Navigation Menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -109,7 +102,6 @@ const NavbarInline = ({ logo, logoImage, navItems, ctaButton }: NavbarInlineProp
                 key={item.name}
                 name={item.name}
                 href={item.href}
-                iconImage={item.name === "Home" ? logoImage : undefined}
                 onClick={() => setMobileMenuOpen(false)}
               />
             ))}
