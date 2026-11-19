@@ -33,7 +33,7 @@ export default function ContactPage() {
           description="Have questions or ready to request your complimentary orthodontic consultation? Reach out to our friendly team today."
           primaryButton={{ text: "Book a Consultation Now", href: "#form" }}
           secondaryButton={{ text: "Your First Visit", href: "/first-visit" }}
-          imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/contact/contact.avif"
+          imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/contact/contact.avif?_wi=1"
         />
       </div>
 
