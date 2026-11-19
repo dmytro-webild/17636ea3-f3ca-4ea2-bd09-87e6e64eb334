@@ -19,7 +19,7 @@ export default function ForTeensPage() {
           description="High school, college, sports, and early careers are full of big moments. We offer discreet, modern orthodontic options that let you smile cheaply and boldly while achieving your ideal alignment."
           primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Treatment Options", href: "/treatments" }}
-          imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif"
+          imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif?_wi=3"
         />
       </div>
 
@@ -33,12 +33,12 @@ export default function ForTeensPage() {
             {
               title: "Virtually Invisible Clear Aligners",
               description: "Pop them out to eat, brush, or take photos for special occasions. Smooth, transparent aligners designed to fit into busy school and athletic schedules.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif?_wi=4",
             },
             {
               title: "Clear Ceramic Braces",
               description: "High-translucency ceramic brackets that blend in with your natural teeth, offering a low-profile look with high precision.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service1.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service1.avif?_wi=1",
             },
           ]}
           bottomItem={{

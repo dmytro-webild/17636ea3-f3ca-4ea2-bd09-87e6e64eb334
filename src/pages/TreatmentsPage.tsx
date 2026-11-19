@@ -20,7 +20,7 @@ export default function TreatmentsPage() {
           description="From virtually invisible clear aligners to ultra-sleek ceramic and metal braces, we offer the full spectrum of modern orthodontic care designed for maximum comfort and lasting results."
           primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Your First Visit", href: "/first-visit" }}
-          imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif"
+          imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif?_wi=5"
         />
       </div>
 
@@ -34,18 +34,18 @@ export default function TreatmentsPage() {
             {
               title: "Discreet Clear Aligners",
               description: "Custom-molded transparent aligners that gently straighten teeth without wires or brackets. Removable for easy eating, brushing, and special occasions.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif?_wi=6",
             },
             {
               title: "Sleek Ceramic & Clear Braces",
               description: "Tooth-colored ceramic brackets that blend seamlessly with your natural tooth shade, delivering high aesthetic appeal with high structural strength.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service1.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service1.avif?_wi=3",
             },
           ]}
           bottomItem={{
             title: "Modern Low-Profile Braces & Phase I Guidance",
             description: "Engineered with smaller, smoother brackets and shape-memory archwires for faster tooth movement and proactive early pediatric jaw guidance.",
-            imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif",
+            imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif?_wi=3",
             primaryButton: { text: "Book a Consultation Now", href: "/contact" },
           }}
         />

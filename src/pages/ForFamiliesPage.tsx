@@ -20,7 +20,7 @@ export default function ForFamiliesPage() {
           description="We understand how busy family life can be. Stillwater Orthodontics combines expert pediatric and family care with hassle-free scheduling, transparent guidance, and a warm atmosphere."
           primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Your First Visit", href: "/first-visit" }}
-          imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/about/about2.avif"
+          imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/about/about2.avif?_wi=2"
         />
       </div>
 
@@ -34,12 +34,12 @@ export default function ForFamiliesPage() {
             {
               title: "Early Evaluation Around Age 7",
               description: "The American Association of Orthodontists recommends a first evaluation at age 7. Early checks help spot subtle jaw growth issues before they become complex.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif?_wi=3",
             },
             {
               title: "Synchronized Family Appointments",
               description: "Save trips and simplify your calendar by booking back-to-back or simultaneous appointments for siblings or parent-child treatment.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif?_wi=2",
             },
           ]}
         />
