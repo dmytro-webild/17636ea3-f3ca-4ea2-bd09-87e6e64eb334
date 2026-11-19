@@ -1,162 +1,199 @@
 import { StyleProvider } from "@/components/ui/StyleProvider";
 import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
 import HeroSplitKpi from "@/components/sections/hero/HeroSplitKpi";
-import ProductRatingCards from "@/components/sections/product/ProductRatingCards";
-import AboutText from "@/components/sections/about/AboutText";
 import FeaturesMediaCards from "@/components/sections/features/FeaturesMediaCards";
+import FeaturesGridSplit from "@/components/sections/features/FeaturesGridSplit";
+import FeaturesBento from "@/components/sections/features/FeaturesBento";
+import FeaturesDetailedSteps from "@/components/sections/features/FeaturesDetailedSteps";
 import TestimonialMarqueeCards from "@/components/sections/testimonial/TestimonialMarqueeCards";
-import ContactSplitEmail from "@/components/sections/contact/ContactSplitEmail";
+import ContactCta from "@/components/sections/contact/ContactCta";
 
 export default function HomePage() {
   return (
-<StyleProvider siteBackground="aurora" heroBackground="horizonGlow" buttonVariant="stagger">
-        <SiteBackgroundSlot />
+    <StyleProvider siteBackground="aurora" heroBackground="horizonGlow" buttonVariant="stagger">
+      <SiteBackgroundSlot />
 
-        
+      <div id="hero" data-section="hero">
+        <HeroSplitKpi
+          textAnimation="slide-up"
+          tag="Stillwater Orthodontics"
+          title="Transforming Smiles, Building Confidence for Life"
+          description="Combining the clinical excellence of a premium orthodontic destination with the warmth, compassion, and accessibility of a neighborhood practice."
+          primaryButton={{ text: "Request a Consultation", href: "/contact" }}
+          secondaryButton={{ text: "Explore Treatment Options", href: "/treatments" }}
+          imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/hero/hero1.avif"
+          kpis={[
+            { value: "100%", label: "Personalized Care" },
+            { value: "3D", label: "Digital Scanning" },
+            { value: "All Ages", label: "Children, Teens & Adults" },
+          ]}
+        />
+      </div>
 
-        <div id="hero" data-section="hero">
-          <HeroSplitKpi
-            textAnimation="slide-up"
-            tag="Excellence Since 2005"
-            title="California's Premier Luxury Dental Practice"
-            description="Experience world-class cosmetic and restorative dentistry with cutting-edge technology and personalized care."
-            primaryButton={{ text: "View Our Services", href: "#services" }}
-            secondaryButton={{ text: "Book Your Visit", href: "#contact" }}
-            imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/hero/hero1.avif"
-            kpis={[
-              { value: "5000+", label: "Satisfied Patients" },
-              { value: "99.8%", label: "Satisfaction Rate" },
-              { value: "15+", label: "Industry Awards" },
-            ]}
-          />
-        </div>
+      <div id="pillars" data-section="pillars">
+        <FeaturesMediaCards
+          textAnimation="slide-up"
+          tag="The Stillwater Standard"
+          title="Care Grounded in Professionalism, Comfort & Innovation"
+          description="We believe great orthodontic care goes far beyond creating beautiful smiles. It creates confidence, trust, and positive experiences that last a lifetime."
+          items={[
+            {
+              title: "Exceptional Clinical Professionalism",
+              description: "Board-quality clinical expertise utilizing modern diagnostics to deliver gentle, precise, and permanent results for every patient.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif",
+            },
+            {
+              title: "Welcoming & Personalized Experience",
+              description: "A warm, compassionate clinic environment where every family feels heard, valued, and comfortably supported throughout their treatment.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about2.avif",
+            },
+          ]}
+        />
+      </div>
 
-        <div id="services" data-section="services">
-          <ProductRatingCards
-            textAnimation="slide-up"
-            tag="Premium Dental Services"
-            title="Our Signature Services"
-            description="From cosmetic enhancement to restorative excellence, our comprehensive services transform smiles and improve oral health with precision and artistry."
-            primaryButton={{ text: "Schedule Consultation", href: "#contact" }}
-            products={[
-              {
-                brand: "Cosmetic",
-                name: "Smile Design & Whitening",
-                price: "From $500",
-                rating: 5,
-                reviewCount: "234",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service1.avif",
-              },
-              {
-                brand: "Restorative",
-                name: "Dental Implants & Crowns",
-                price: "From $1,200",
-                rating: 5,
-                reviewCount: "312",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif",
-              },
-              {
-                brand: "Advanced",
-                name: "Orthodontics & Aligners",
-                price: "From $800",
-                rating: 5,
-                reviewCount: "289",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif",
-              },
-            ]}
-          />
-        </div>
+      <div id="treatments-overview" data-section="treatments-overview">
+        <FeaturesGridSplit
+          textAnimation="slide-up"
+          tag="Treatment Options"
+          title="Tailored Orthodontic Solutions for Every Stage of Life"
+          description="Whether you are seeking early intervention for a child, discreet aligners for a teenager, or subtle options for yourself, we craft treatment plans to match your goals."
+          topItems={[
+            {
+              title: "Discreet Clear Aligners",
+              description: "Custom digital aligners providing a virtually invisible, removable alternative to traditional braces for teens and adults.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif",
+            },
+            {
+              title: "Modern Ceramic & Metal Braces",
+              description: "Low-profile, sleek brackets engineered for maximum comfort, rapid movement, and customizable aesthetic expression.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service1.avif",
+            },
+          ]}
+          bottomItem={{
+            title: "Pediatric & Early Guidance",
+            description: "Proactive evaluation around age 7 to monitor jaw development, create room for erupting teeth, and simplify future treatment.",
+            imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif",
+            primaryButton: { text: "Explore Treatment Options", href: "/treatments" },
+            avatarsSrc: [
+              "https://storage.googleapis.com/webild/default/templates/skincare/image5.avif",
+              "https://storage.googleapis.com/webild/default/templates/skincare/image6.avif",
+            ],
+            avatarsLabel: "Trusted by 1000+ local families",
+          }}
+        />
+      </div>
 
-        <div id="about" data-section="about">
-          <AboutText
-            textAnimation="slide-up"
-            title="For over two decades, we've been California's trusted destination for luxury dental care, combining advanced technology with artistic precision to create beautiful, healthy smiles that transform lives"
-            primaryButton={{ text: "Meet Our Team", href: "#testimonials" }}
-            secondaryButton={{ text: "Learn More", href: "#contact" }}
-          />
-        </div>
+      <div id="family-bento" data-section="family-bento">
+        <FeaturesBento
+          textAnimation="slide-up"
+          tag="Designed For Families"
+          title="A Modern Orthodontic Experience Built Around You"
+          description="From mess-free 3D digital impressions to convenient multi-family scheduling, every detail of Stillwater Orthodontics is engineered for your peace of mind."
+          features={[
+            {
+              bentoComponent: "icon-text-marquee",
+              title: "Mess-Free 3D Digital Scans",
+              description: "Say goodbye to uncomfortable gooey impressions. Our advanced intraoral scanners capture high-resolution 3D models in seconds.",
+              centerIcon: "Sparkles",
+              marqueeTexts: ["100% Digital Scans", "Zero Gooey Putty", "Precision 3D Models", "Fast & Comfortable"],
+            },
+            {
+              bentoComponent: "info-card-marquee",
+              title: "Family-Centric Convenience",
+              description: "We make life easier for busy parents with synchronized appointments and flexible interest-free monthly payments.",
+              infoCards: [
+                { icon: "Users", label: "Scheduling", value: "Multi-Child Visits" },
+                { icon: "HeartHandshake", label: "Financing", value: "0% Interest In-House" },
+                { icon: "ShieldCheck", label: "Consultation", value: "100% Free 3D Exam" },
+              ],
+            },
+          ]}
+        />
+      </div>
 
-        <div id="features" data-section="features">
-          <FeaturesMediaCards
-            textAnimation="slide-up"
-            tag="Premium Dental Excellence"
-            title="Why Choose Our Luxury Practice"
-            description="We combine artistic excellence with scientific precision, utilizing the latest technology and techniques to deliver transformative results that exceed expectations."
-            items={[
-              {
-                title: "Digital Technology",
-                description: "3D imaging, intraoral cameras, and computer-aided design for precise diagnostics and treatment planning.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif",
-              },
-              {
-                title: "Master Craftsmanship",
-                description: "Award-winning dentists with decades of experience in cosmetic and restorative excellence.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about2.avif",
-              },
-            ]}
-          />
-        </div>
+      <div id="process" data-section="process">
+        <FeaturesDetailedSteps
+          textAnimation="slide-up"
+          tag="Your Patient Journey"
+          title="Four Simple Steps to a Confident Smile"
+          description="We take the mystery out of orthodontics with a seamless, structured process from your initial visit to your final reveal."
+          steps={[
+            {
+              tag: "Step 1",
+              title: "01",
+              subtitle: "Complimentary Consultation",
+              description: "Meet our dedicated care team, explore our modern facility, and discuss your smile goals in a relaxed environment.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif",
+            },
+            {
+              tag: "Step 2",
+              title: "02",
+              subtitle: "Precision 3D Digital Scan",
+              description: "We capture high-definition digital images to analyze bite alignment, jaw structure, and teeth positioning with sub-millimeter precision.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif",
+            },
+            {
+              tag: "Step 3",
+              title: "03",
+              subtitle: "Customized Treatment Plan",
+              description: "Your specialist creates a customized treatment plan detailing expected milestones, estimated duration, and flexible payment arrangements.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif",
+            },
+            {
+              tag: "Step 4",
+              title: "04",
+              subtitle: "Gentle Care & Radiant Reveal",
+              description: "Enjoy comfortable progress checks along your journey until you celebrate your newly aligned, lifelong confident smile.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/hero/hero1.avif",
+            },
+          ]}
+        />
+      </div>
 
-        <div id="testimonials" data-section="testimonials">
-          <TestimonialMarqueeCards
-            textAnimation="slide-up"
-            tag="Patient Reviews"
-            title="What Our Patients Say"
-            description="Discover why hundreds of California's discerning patients trust us for their dental care and smile transformations."
-            testimonials={[
-              {
-                name: "Jennifer Martinez",
-                role: "San Diego Patient",
-                quote: "The most professional and caring dental experience I've ever had. The results exceeded my expectations and the attention to detail is extraordinary.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/luxury-travel-agency/testimonial/testimonial1.webp",
-              },
-              {
-                name: "Robert Chen",
-                role: "Business Executive",
-                quote: "Finally found a dentist who understands aesthetics and function. My smile is now my confidence. Highly recommended to anyone serious about quality.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/luxury-travel-agency/testimonial/testimonial2.webp",
-              },
-              {
-                name: "Sarah Williams",
-                role: "Entertainment Industry",
-                quote: "This is the place where art meets science. My smile transformation has been life-changing. The expertise here is unmatched.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/luxury-travel-agency/testimonial/testimonial3.webp",
-              },
-              {
-                name: "Michael Torres",
-                role: "Loyal Patient",
-                quote: "I've been a patient for 8 years. The consistent excellence, warm staff, and cutting-edge treatments keep me coming back with confidence.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare/image5.avif",
-              },
-              {
-                name: "Amanda Rodriguez",
-                role: "Social Media Influencer",
-                quote: "When your smile matters for your career, you go to the best. This practice delivered a smile that's both beautiful and natural-looking.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare/image6.avif",
-              },
-              {
-                name: "David Kim",
-                role: "Healthcare Professional",
-                quote: "The clinical precision combined with artistic vision is remarkable. This team truly understands comprehensive dental care at the highest level.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare/image7.avif",
-              },
-            ]}
-          />
-        </div>
+      <div id="testimonials" data-section="testimonials">
+        <TestimonialMarqueeCards
+          textAnimation="slide-up"
+          tag="Patient Stories"
+          title="Trusted by Families Throughout Our Community"
+          description="Read how our compassionate approach and clinical precision have helped patients of all ages smile with genuine confidence."
+          testimonials={[
+            {
+              name: "Parent of Pediatric Patient",
+              role: "Parent of 9-year-old",
+              quote: "Stillwater made my son feel completely at ease during his early consultation. The team took the time to explain everything in a fun, gentle way.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare/image5.avif",
+            },
+            {
+              name: "Teen Aligner Patient",
+              role: "High School Junior",
+              quote: "I was worried about having braces during high school, but clear aligners at Stillwater were practically invisible. My friends didn't even notice!",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare/image6.avif",
+            },
+            {
+              name: "Adult Orthodontic Patient",
+              role: "Working Professional",
+              quote: "As an adult patient, I appreciated the efficiency and respect for my time. The clinical results are incredible, and the atmosphere is top-tier.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare/image7.avif",
+            },
+            {
+              name: "Family of Three Patients",
+              role: "Busy Parent",
+              quote: "Having two teens and myself in treatment at the same time sounded daunting, but Stillwater's multi-appointment scheduling made it effortless.",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare/image8.avif",
+            },
+          ]}
+        />
+      </div>
 
-        <div id="contact" data-section="contact">
-          <ContactSplitEmail
-            textAnimation="slide-up"
-            tag="Get In Touch"
-            title="Schedule Your Luxury Dental Experience"
-            description="Connect with our team to discuss your smile goals and discover how our personalized treatments can transform your dental health and confidence."
-            inputPlaceholder="Enter your email"
-            buttonText="Get Started"
-            imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/contact/contact.avif"
-          />
-        </div>
-
-        
-      </StyleProvider>
+      <div id="consultation-cta" data-section="consultation-cta">
+        <ContactCta
+          textAnimation="slide-up"
+          tag="Begin Your Journey"
+          text="Ready to Request Your Orthodontic Consultation?"
+          primaryButton={{ text: "Request a Consultation", href: "/contact" }}
+          secondaryButton={{ text: "Explore Your First Visit", href: "/first-visit" }}
+        />
+      </div>
+    </StyleProvider>
   );
 }
