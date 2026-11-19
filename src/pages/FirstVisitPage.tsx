@@ -17,7 +17,9 @@ export default function FirstVisitPage() {
           textAnimation="slide-up"
           tag="Your First Visit"
           title="What to Expect at Your Complimentary Orthodontic Consultation"
-          description="We make your initial visit relaxed, informative, and completely stress-free. Discover how comfortable modern orthodontics can be with our zero-pressure evaluation."
+          description="Your first visit is all about you. 
+
+We'll explore your smile goals, answer your questions, and provide complimentary photos,         X-rays, and a 3D digital scan. No pressure, just personalized guidance and a clear path forward."
           primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Treatment Options", href: "/treatments" }}
           imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/hero/hero1.avif"
