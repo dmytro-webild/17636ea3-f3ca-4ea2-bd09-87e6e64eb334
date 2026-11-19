@@ -17,6 +17,7 @@ export default function Layout() {
           { name: "The difference", href: "/for-families" },
           { name: "Reviews", href: "/for-teens-young-adults" },
           { name: "First Visit", href: "/first-visit" },
+          { name: "Pricing", href: "/pricing" },
           { name: "Contact", href: "/contact" },
         ]}
         ctaButton={{ text: "Book a FREE Consultation Now", href: "/contact" }}
@@ -28,8 +29,9 @@ export default function Layout() {
         brand="Stillwater Orthodontics"
         columns={[
           {
-            title: "Treatments",
+            title: "Treatments & Fees",
             items: [
+              { label: "Transparent Pricing", href: "/pricing" },
               { label: "Clear Aligners", href: "/treatments" },
               { label: "Ceramic & Metal Braces", href: "/treatments" },
               { label: "Pediatric Orthodontics", href: "/for-families" },
