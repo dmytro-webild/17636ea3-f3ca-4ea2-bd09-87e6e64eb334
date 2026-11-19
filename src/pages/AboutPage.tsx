@@ -20,7 +20,7 @@ export default function AboutPage() {
           description="Stillwater Orthodontics was founded on a simple belief: orthodontic treatment should be an empowering, positive, and deeply personalized milestone for every child, teenager, and adult."
           primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Treatment Options", href: "/treatments" }}
-          imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif"
+          imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif?_wi=1"
         />
       </div>
 
@@ -46,12 +46,12 @@ export default function AboutPage() {
             {
               title: "Digital Diagnostics & 3D Scanning",
               description: "Utilizing low-dose digital imaging and intraoral 3D scanners, we map out tooth movement with pin-point digital accuracy before treatment even begins.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about2.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about2.avif?_wi=1",
             },
             {
               title: "Gentle & Biocompatible Materials",
               description: "From ultra-flexible memory wires to crystal-clear biocompatible aligners, we prioritize gentle forces that minimize discomfort.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif?_wi=1",
             },
           ]}
         />
