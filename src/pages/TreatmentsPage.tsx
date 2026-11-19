@@ -18,7 +18,7 @@ export default function TreatmentsPage() {
           tag="Orthodontic Treatments"
           title="Advanced Smile Engineering Tailored to Your Lifestyle"
           description="From virtually invisible clear aligners to ultra-sleek ceramic and metal braces, we offer the full spectrum of modern orthodontic care designed for maximum comfort and lasting results."
-          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
+          primaryButton={{ text: "Book a FREE Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Your First Visit", href: "/first-visit" }}
           imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif?_wi=5"
         />
