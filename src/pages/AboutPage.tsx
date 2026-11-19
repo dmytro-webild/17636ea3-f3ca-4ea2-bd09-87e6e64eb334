@@ -18,7 +18,7 @@ export default function AboutPage() {
           tag="About Stillwater Orthodontics"
           title="Where Destination Clinical Care Meets Neighborhood Warmth"
           description="Stillwater Orthodontics was founded on a simple belief: orthodontic treatment should be an empowering, positive, and deeply personalized milestone for every child, teenager, and adult."
-          primaryButton={{ text: "Request a Consultation", href: "/contact" }}
+          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Treatment Options", href: "/treatments" }}
           imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif"
         />
@@ -123,7 +123,7 @@ export default function AboutPage() {
           textAnimation="slide-up"
           tag="Join Our Family"
           text="Experience the Stillwater Difference"
-          primaryButton={{ text: "Request a Consultation", href: "/contact" }}
+          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Treatment Options", href: "/treatments" }}
         />
       </div>

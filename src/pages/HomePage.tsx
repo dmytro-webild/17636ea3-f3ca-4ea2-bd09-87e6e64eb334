@@ -19,7 +19,7 @@ export default function HomePage() {
           tag="Stillwater Orthodontics"
           title="Transforming Smiles, Building Confidence for Life"
           description="Combining the clinical excellence of a premium orthodontic destination with the warmth, compassion, and accessibility of a neighborhood practice."
-          primaryButton={{ text: "Request a Consultation", href: "/contact" }}
+          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Treatment Options", href: "/treatments" }}
           imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/hero/hero1.avif?_wi=1"
           kpis={[
@@ -190,7 +190,7 @@ export default function HomePage() {
           textAnimation="slide-up"
           tag="Begin Your Journey"
           text="Ready to Request Your Orthodontic Consultation?"
-          primaryButton={{ text: "Request a Consultation", href: "/contact" }}
+          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Your First Visit", href: "/first-visit" }}
         />
       </div>

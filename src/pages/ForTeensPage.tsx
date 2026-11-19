@@ -17,7 +17,7 @@ export default function ForTeensPage() {
           tag="For Teens & Young Adults"
           title="Smile With Confidence at Every Stage of Your Journey"
           description="High school, college, sports, and early careers are full of big moments. We offer discreet, modern orthodontic options that let you smile cheaply and boldly while achieving your ideal alignment."
-          primaryButton={{ text: "Request a Consultation", href: "/contact" }}
+          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Treatment Options", href: "/treatments" }}
           imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif"
         />
@@ -45,7 +45,7 @@ export default function ForTeensPage() {
             title: "Post-Graduate & Young Adult Care",
             description: "Discreet, high-efficiency options tailored for young professionals preparing for interviews, careers, and milestones.",
             imageSrc: "https://storage.googleapis.com/webild/default/templates/med-spa/services/service1.webp",
-            primaryButton: { text: "Request a Consultation", href: "/contact" },
+            primaryButton: { text: "Book a Consultation Now", href: "/contact" },
           }}
         />
       </div>
@@ -110,7 +110,7 @@ export default function ForTeensPage() {
           textAnimation="slide-up"
           tag="Start Your Smile Transformation"
           text="Ready to Build a Smile You Love?"
-          primaryButton={{ text: "Request a Consultation", href: "/contact" }}
+          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Treatment Options", href: "/treatments" }}
         />
       </div>

@@ -18,7 +18,7 @@ export default function ForFamiliesPage() {
           tag="For Families"
           title="Convenient, Welcoming Orthodontic Care for Your Entire Family"
           description="We understand how busy family life can be. Stillwater Orthodontics combines expert pediatric and family care with hassle-free scheduling, transparent guidance, and a warm atmosphere."
-          primaryButton={{ text: "Request a Consultation", href: "/contact" }}
+          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Your First Visit", href: "/first-visit" }}
           imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/about/about2.avif"
         />
@@ -131,7 +131,7 @@ export default function ForFamiliesPage() {
           textAnimation="slide-up"
           tag="Family Consultations"
           text="Schedule Your Family's First Visit Today"
-          primaryButton={{ text: "Request a Consultation", href: "/contact" }}
+          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Teen Care", href: "/for-teens-young-adults" }}
         />
       </div>

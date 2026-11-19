@@ -18,7 +18,7 @@ export default function TreatmentsPage() {
           tag="Orthodontic Treatments"
           title="Advanced Smile Engineering Tailored to Your Lifestyle"
           description="From virtually invisible clear aligners to ultra-sleek ceramic and metal braces, we offer the full spectrum of modern orthodontic care designed for maximum comfort and lasting results."
-          primaryButton={{ text: "Request a Consultation", href: "/contact" }}
+          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Your First Visit", href: "/first-visit" }}
           imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif"
         />
@@ -46,7 +46,7 @@ export default function TreatmentsPage() {
             title: "Modern Low-Profile Braces & Phase I Guidance",
             description: "Engineered with smaller, smoother brackets and shape-memory archwires for faster tooth movement and proactive early pediatric jaw guidance.",
             imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif",
-            primaryButton: { text: "Request a Consultation", href: "/contact" },
+            primaryButton: { text: "Book a Consultation Now", href: "/contact" },
           }}
         />
       </div>
@@ -57,7 +57,7 @@ export default function TreatmentsPage() {
           tag="Treatment Comparison"
           title="Choosing Between Clear Aligners and Modern Braces"
           description="Both options produce healthy, radiant smiles. Compare key advantages to find your best fit."
-          primaryButton={{ text: "Request a Consultation", href: "/contact" }}
+          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           negativeItems={[
             "Traditional messy putty impressions (We use 100% digital 3D scans)",
             "Bulky, sharp bracket designs (We use low-profile, smooth contour appliances)",
@@ -133,7 +133,7 @@ export default function TreatmentsPage() {
           textAnimation="slide-up"
           tag="Find Your Fit"
           text="Let Us Help You Choose the Perfect Option"
-          primaryButton={{ text: "Request a Consultation", href: "/contact" }}
+          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore For Families", href: "/for-families" }}
         />
       </div>
