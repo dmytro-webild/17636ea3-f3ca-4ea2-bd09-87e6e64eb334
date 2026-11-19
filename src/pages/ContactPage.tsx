@@ -31,7 +31,7 @@ export default function ContactPage() {
           tag="Contact Stillwater Orthodontics"
           title="We Are Here to Help You Begin Your Smile Journey"
           description="Have questions or ready to request your complimentary orthodontic consultation? Reach out to our friendly team today."
-          primaryButton={{ text: "Request a Consultation", href: "#form" }}
+          primaryButton={{ text: "Book a Consultation Now", href: "#form" }}
           secondaryButton={{ text: "Your First Visit", href: "/first-visit" }}
           imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/contact/contact.avif"
         />
@@ -99,7 +99,7 @@ export default function ContactPage() {
 
           {/* Form Column */}
           <div id="form" className="lg:col-span-7 p-6 sm:p-10 rounded-2xl card border border-border/40 shadow-xl">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">Request a Consultation</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">Book a Consultation Now</h2>
             <p className="text-sm text-foreground/80 mb-6">
               Complete the form below to request a complimentary 3D scan and orthodontic consultation.
             </p>
@@ -199,7 +199,7 @@ export default function ContactPage() {
                 </div>
 
                 <Button
-                  text="Request a Consultation"
+                  text="Book a Consultation Now"
                   variant="primary"
                   animate={false}
                   className="w-full mt-2"
