@@ -76,7 +76,7 @@ We'll explore your smile goals, answer your questions, and provide complimentary
             {
               bentoComponent: "icon-text-marquee",
               title: "What to Bring to Your Appointment",
-              description: "Bring your dental insurance card, completed online patient form, and any questions about aligners or braces.",
+              description: "No need to worry about what to bring just yet! Once your consultation is booked, our receptionist will reach out with all the details you’ll need for your visit.",
               centerIcon: "CheckCircle",
               marqueeTexts: ["Insurance Details", "Online Patient Form", "List of Questions", "Parent for Minors"],
             },
