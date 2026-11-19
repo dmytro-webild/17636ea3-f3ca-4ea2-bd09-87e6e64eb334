@@ -9,7 +9,7 @@ export default function Layout() {
     <StyleProvider buttonVariant="default" siteBackground="none" heroBackground="none">
       <SiteBackgroundSlot />
       <NavbarInline
-        logo="STILLWATER ORTHODONTICS"
+        logo=" "
         logoImage="https://storage.googleapis.com/webild/users/user_3MGLJMV28y8bVnP1IkR5dvWEUbT/uploaded-1795122015742-6ti3zo6g.png"
         navItems={[
           { name: "Home", href: "/" },
