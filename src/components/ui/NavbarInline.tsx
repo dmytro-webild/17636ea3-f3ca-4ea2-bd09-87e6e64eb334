@@ -55,18 +55,20 @@ const NavbarInline = ({ logo, logoImage, navItems, ctaButton }: NavbarInlineProp
         <a
           href="/"
           onClick={handleLogoClick}
-          className="pl-2 text-sm xl:text-base font-bold tracking-tight text-foreground flex items-center gap-2.5 shrink-0"
+          className="pl-1 sm:pl-2 text-sm xl:text-base font-bold tracking-tight text-foreground flex items-center gap-3 shrink-0 group relative"
         >
           {logoImage ? (
-            <img
-              src={logoImage}
-              alt={logo}
-              className="h-7 w-7 xl:h-8 xl:w-8 rounded-full object-cover shrink-0"
-            />
+            <div className="relative flex items-center justify-center shrink-0">
+              <img
+                src={logoImage}
+                alt={logo}
+                className="h-16 w-16 sm:h-24 sm:w-24 md:h-32 md:w-32 xl:h-[150px] xl:w-[150px] -my-4 sm:-my-7 md:-my-10 xl:-my-13 object-contain shrink-0 transition-transform duration-300 group-hover:scale-105 filter drop-shadow-md"
+              />
+            </div>
           ) : (
             <span className="w-2.5 h-2.5 rounded-full bg-primary-cta inline-block" />
           )}
-          <span>{logo}</span>
+          <span className="font-extrabold tracking-wider text-xs sm:text-sm md:text-base xl:text-lg">{logo}</span>
         </a>
 
         {/* Desktop Navigation */}

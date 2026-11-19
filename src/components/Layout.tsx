@@ -22,7 +22,7 @@ export default function Layout() {
         ]}
         ctaButton={{ text: "Book a Consultation Now", href: "/contact" }}
       />
-      <main className="flex-grow pt-24 md:pt-28">
+      <main className="flex-grow pt-28 md:pt-32">
         <Outlet />
       </main>
       <FooterSimple
