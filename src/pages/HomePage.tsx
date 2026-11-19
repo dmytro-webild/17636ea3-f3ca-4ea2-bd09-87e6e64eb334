@@ -21,7 +21,7 @@ export default function HomePage() {
           description="Combining the clinical excellence of a premium orthodontic destination with the warmth, compassion, and accessibility of a neighborhood practice."
           primaryButton={{ text: "Request a Consultation", href: "/contact" }}
           secondaryButton={{ text: "Explore Treatment Options", href: "/treatments" }}
-          imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/hero/hero1.avif"
+          imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/hero/hero1.avif?_wi=1"
           kpis={[
             { value: "100%", label: "Personalized Care" },
             { value: "3D", label: "Digital Scanning" },
@@ -40,7 +40,7 @@ export default function HomePage() {
             {
               title: "Exceptional Clinical Professionalism",
               description: "Board-quality clinical expertise utilizing modern diagnostics to deliver gentle, precise, and permanent results for every patient.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif?_wi=1",
             },
             {
               title: "Welcoming & Personalized Experience",
@@ -61,7 +61,7 @@ export default function HomePage() {
             {
               title: "Discreet Clear Aligners",
               description: "Custom digital aligners providing a virtually invisible, removable alternative to traditional braces for teens and adults.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif?_wi=1",
             },
             {
               title: "Modern Ceramic & Metal Braces",
@@ -72,7 +72,7 @@ export default function HomePage() {
           bottomItem={{
             title: "Pediatric & Early Guidance",
             description: "Proactive evaluation around age 7 to monitor jaw development, create room for erupting teeth, and simplify future treatment.",
-            imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif",
+            imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif?_wi=1",
             primaryButton: { text: "Explore Treatment Options", href: "/treatments" },
             avatarsSrc: [
               "https://storage.googleapis.com/webild/default/templates/skincare/image5.avif",
@@ -123,28 +123,28 @@ export default function HomePage() {
               title: "01",
               subtitle: "Complimentary Consultation",
               description: "Meet our dedicated care team, explore our modern facility, and discuss your smile goals in a relaxed environment.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif?_wi=2",
             },
             {
               tag: "Step 2",
               title: "02",
               subtitle: "Precision 3D Digital Scan",
               description: "We capture high-definition digital images to analyze bite alignment, jaw structure, and teeth positioning with sub-millimeter precision.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif?_wi=2",
             },
             {
               tag: "Step 3",
               title: "03",
               subtitle: "Customized Treatment Plan",
               description: "Your specialist creates a customized treatment plan detailing expected milestones, estimated duration, and flexible payment arrangements.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif?_wi=2",
             },
             {
               tag: "Step 4",
               title: "04",
               subtitle: "Gentle Care & Radiant Reveal",
               description: "Enjoy comfortable progress checks along your journey until you celebrate your newly aligned, lifelong confident smile.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/hero/hero1.avif",
+              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/hero/hero1.avif?_wi=2",
             },
           ]}
         />
