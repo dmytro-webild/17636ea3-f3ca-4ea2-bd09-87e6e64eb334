@@ -65,8 +65,8 @@ const NavbarInline = ({ logo, logoImage, navItems, ctaButton }: NavbarInlineProp
         </a>
 
         {/* Navigation Menu & Actions on the Right */}
-        <div className="hidden lg:flex items-center gap-5 xl:gap-7 shrink-0">
-          <nav className="flex items-center gap-5 xl:gap-7">
+        <div className="hidden lg:flex items-center gap-3.5 xl:gap-6 shrink-0">
+          <nav className="flex items-center gap-3.5 xl:gap-6">
             {navItems.map((item) => (
               <NavItem
                 key={item.name}
