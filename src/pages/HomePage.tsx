@@ -17,7 +17,7 @@ export default function HomePage() {
         <HeroSplitKpi
           textAnimation="slide-up"
           tag="Stillwater Orthodontics"
-          title="Transforming Smiles, Building Confidence for Life"
+          title="Orthodontics, thoughtfully done."
           description="Premium orthodontic care, delivered with the warmth and compassion of a neighbourhood practice."
           primaryButton={{ text: "Book a FREE Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Treatment Options", href: "/treatments" }}
