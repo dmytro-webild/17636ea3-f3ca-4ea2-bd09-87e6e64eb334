@@ -110,16 +110,6 @@ export default function PricingPage() {
               centerIcon: "HeartHandshake",
               marqueeTexts: ["0% Interest Financing", "Custom Down Payments", "Low Monthly Payments", "Zero Hidden Fees"],
             },
-            {
-              bentoComponent: "info-card-marquee",
-              title: "Insurance & Pre-Tax Savings",
-              description: "We work directly with major insurance providers and support HSA/FSA accounts to minimize out-of-pocket expenses.",
-              infoCards: [
-                { icon: "ShieldCheck", label: "Insurance", value: "Direct Claim Filing" },
-                { icon: "CreditCard", label: "Pre-Tax", value: "HSA / FSA Eligible" },
-                { icon: "Sparkles", label: "Pricing", value: "All-Inclusive Quotes" },
-              ],
-            },
           ]}
         />
       </div>
