@@ -152,7 +152,7 @@ We'll explore your smile goals, answer your questions, and provide complimentary
           textAnimation="slide-up"
           tag="Schedule Today"
           text="Ready to Request Your Complimentary First Visit?"
-          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
+          primaryButton={{ text: "Book a FREE Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "For Families", href: "/for-families" }}
         />
       </div>
