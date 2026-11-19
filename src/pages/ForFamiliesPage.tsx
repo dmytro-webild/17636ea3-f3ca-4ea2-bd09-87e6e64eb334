@@ -1,10 +1,8 @@
 import { StyleProvider } from "@/components/ui/StyleProvider";
 import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
 import HeroSplit from "@/components/sections/hero/HeroSplit";
-import FeaturesMediaCards from "@/components/sections/features/FeaturesMediaCards";
-import FeaturesBento from "@/components/sections/features/FeaturesBento";
+import FeaturesTwoColumnGrid from "@/components/sections/features/FeaturesTwoColumnGrid";
 import FaqTwoColumn from "@/components/sections/faq/FaqTwoColumn";
-import MetricsIconCards from "@/components/sections/metrics/MetricsIconCards";
 import ContactCta from "@/components/sections/contact/ContactCta";
 
 export default function ForFamiliesPage() {
@@ -15,85 +13,71 @@ export default function ForFamiliesPage() {
       <div id="families-hero" data-section="families-hero">
         <HeroSplit
           textAnimation="slide-up"
-          tag="For Families"
-          title="Convenient, Welcoming Orthodontic Care for Your Entire Family"
-          description="We understand how busy family life can be. Stillwater Orthodontics combines expert pediatric and family care with hassle-free scheduling, transparent guidance, and a warm atmosphere."
+          tag="The Stillwater Difference"
+          title="Why Choose Stillwater Orthodontics"
+          description="We make orthodontic care approachable, transparent, and hassle-free for your entire family."
           primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Your First Visit", href: "/first-visit" }}
           imageSrc="https://storage.googleapis.com/webild/default/templates/dentist/about/about2.avif?_wi=2"
         />
       </div>
 
-      <div id="family-perks" data-section="family-perks">
-        <FeaturesMediaCards
+      <div id="the-difference-grid" data-section="the-difference-grid">
+        <FeaturesTwoColumnGrid
           textAnimation="slide-up"
-          tag="Family-Centered Excellence"
-          title="Designed with Parents and Kids in Mind"
-          description="From your very first phone call to your child's final retainer check, we make every step seamless and supportive."
-          items={[
-            {
-              title: "Early Evaluation Around Age 7",
-              description: "The American Association of Orthodontists recommends a first evaluation at age 7. Early checks help spot subtle jaw growth issues before they become complex.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif?_wi=3",
-            },
-            {
-              title: "Synchronized Family Appointments",
-              description: "Save trips and simplify your calendar by booking back-to-back or simultaneous appointments for siblings or parent-child treatment.",
-              imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif?_wi=2",
-            },
-          ]}
-        />
-      </div>
-
-      <div id="why-families-love-us" data-section="why-families-love-us">
-        <FeaturesBento
-          textAnimation="slide-up"
-          tag="Parent Peace of Mind"
-          title="What Makes Stillwater Family-Friendly"
-          description="We eliminate stress and uncertainty so you can focus on watching your child grow and gain confidence."
+          tag="10 Reasons to Choose Us"
+          title="The Stillwater Difference at a Glance"
+          description="Everything you need to know about our specialized, stress-free approach to your family's care."
           features={[
             {
-              bentoComponent: "icon-text-marquee",
-              title: "Goo-Free Digital Impressions",
-              description: "Kids love our high-speed 3D scanner. No choking on impression putty, just a fast and fun digital camera scan.",
-              centerIcon: "Smile",
-              marqueeTexts: ["Kid-Friendly Scans", "Zero Gooey Putty", "Fast 3D Camera", "Zero Gagging"],
+              icon: "Award",
+              title: "Orthodontic Specialists",
+              description: "We have years of specialized training in straightening teeth.",
             },
             {
-              bentoComponent: "info-card-marquee",
-              title: "Transparent & Flexible Financing",
-              description: "No unexpected surprise fees. We detail all records, appliances, progress visits, and initial retainers in one clear quote.",
-              infoCards: [
-                { icon: "HeartHandshake", label: "Financing", value: "0% Interest In-House" },
-                { icon: "ShieldCheck", label: "Insurance", value: "Claims Filed For You" },
-                { icon: "CheckCircle", label: "Pricing", value: "All-Inclusive Quote" },
-              ],
-            },
-          ]}
-        />
-      </div>
-
-      <div id="family-metrics" data-section="family-metrics">
-        <MetricsIconCards
-          textAnimation="slide-up"
-          tag="Family Milestones"
-          title="Partnering with Families Every Step of the Way"
-          description="Our commitment to pediatric and family orthodontic care."
-          metrics={[
-            {
-              icon: "Calendar",
-              title: "Recommended First Check",
-              value: "Age 7",
+              icon: "Sparkles",
+              title: "Innovative Aesthetic Options",
+              description: "We offer treatment options beyond traditional metal braces.",
             },
             {
-              icon: "HeartHandshake",
-              title: "In-House Flexible Plans",
-              value: "0% Int.",
+              icon: "Scan",
+              title: "3D Scanning",
+              description: "No goopy molds, just a quick digital scan.",
+            },
+            {
+              icon: "Clock",
+              title: "Fewer Visits",
+              description: "We use smart techniques that cut down appointment times.",
+            },
+            {
+              icon: "Target",
+              title: "Digitally Placed Brackets",
+              description: "Our precision planning ensures a smoother, faster treatment.",
+            },
+            {
+              icon: "Sliders",
+              title: "Customized Treatment Plans",
+              description: "Every plan is built around your unique needs.",
+            },
+            {
+              icon: "Wallet",
+              title: "Flexible Payment Plans",
+              description: "We offer payment options that fit your situation.",
+            },
+            {
+              icon: "ShieldCheck",
+              title: "No Hidden Fees",
+              description: "Our pricing is transparent for all treatment types.",
+            },
+            {
+              icon: "Video",
+              title: "Video Updates",
+              description: "We provide quick video or text check-ins for parents.",
             },
             {
               icon: "Users",
-              title: "Combined Family Slots",
-              value: "Multi",
+              title: "Dentist Collaboration",
+              description: "We team up with your dentist for long-term health results.",
             },
           ]}
         />
