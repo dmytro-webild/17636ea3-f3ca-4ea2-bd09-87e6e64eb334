@@ -16,7 +16,7 @@ export default function AboutPage() {
         <HeroSplit
           textAnimation="slide-up"
           tag="About Stillwater Orthodontics"
-          title="Where Destination Clinical Care Meets Neighborhood Warmth"
+          title="Over 25 years of experience in the field."
           description="Stillwater Orthodontics was founded on a simple belief: orthodontic treatment should be an empowering, positive, and deeply personalized milestone for every child, teenager, and adult."
           primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Treatment Options", href: "/treatments" }}
