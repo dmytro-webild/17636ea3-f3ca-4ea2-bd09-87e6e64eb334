@@ -6,6 +6,7 @@ import { useButtonClick } from "@/hooks/useButtonClick";
 
 interface NavbarInlineProps {
   logo: string;
+  logoImage?: string;
   navItems: { name: string; href: string }[];
   ctaButton: { text: string; href: string };
 }
@@ -30,7 +31,7 @@ const NavItem = ({ name, href, onClick }: { name: string; href: string; onClick?
   );
 };
 
-const NavbarInline = ({ logo, navItems, ctaButton }: NavbarInlineProps) => {
+const NavbarInline = ({ logo, logoImage, navItems, ctaButton }: NavbarInlineProps) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const handleLogoClick = useButtonClick("/");
 
@@ -40,10 +41,18 @@ const NavbarInline = ({ logo, navItems, ctaButton }: NavbarInlineProps) => {
         <a
           href="/"
           onClick={handleLogoClick}
-          className="pl-2 text-lg xl:text-xl font-bold tracking-tight text-foreground flex items-center gap-2"
+          className="pl-2 text-sm xl:text-base font-bold tracking-tight text-foreground flex items-center gap-2.5 shrink-0"
         >
-          <span className="w-2.5 h-2.5 rounded-full bg-primary-cta inline-block" />
-          {logo}
+          {logoImage ? (
+            <img
+              src={logoImage}
+              alt={logo}
+              className="h-7 w-7 xl:h-8 xl:w-8 rounded-full object-cover shrink-0"
+            />
+          ) : (
+            <span className="w-2.5 h-2.5 rounded-full bg-primary-cta inline-block" />
+          )}
+          <span>{logo}</span>
         </a>
 
         {/* Desktop Navigation */}
