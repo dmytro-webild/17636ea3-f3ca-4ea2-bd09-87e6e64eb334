@@ -31,34 +31,35 @@ We'll explore your smile goals, answer your questions, and provide complimentary
           textAnimation="slide-up"
           tag="Step-by-Step Experience"
           title="Your First Appointment in Four Easy Steps"
-          description="Here is exactly what happens during your complimentary 60-minute initial visit at Stillwater Orthodontics."
+          description="Here is exactly what happens during your complimentary initial visit at Stillwater Orthodontics."
+          layout="horizontal"
           steps={[
             {
               tag: "Step 1",
               title: "01",
-              subtitle: "Warm Hospitality & Clinic Tour",
-              description: "When you walk through our doors, our patient coordinator will welcome you, answer initial questions, and give your family a brief tour of our modern office.",
+              subtitle: "Warm Hospitality & Tour",
+              description: "Our team welcomes you, answers initial questions, and gives your family a brief tour of our modern office.",
               imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/about/about1.avif?_wi=2",
             },
             {
               tag: "Step 2",
               title: "02",
-              subtitle: "Fast & Mess-Free 3D Digital Scan",
-              description: "We use high-speed intraoral 3D scanners to create an exact digital model of your teeth and jaws in under 3 minutes — with zero gooey impressions.",
+              subtitle: "Mess-Free 3D Digital Scan",
+              description: "We create an exact 3D digital model of your teeth and jaws in under 3 minutes with zero gooey impressions.",
               imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service3.avif?_wi=2",
             },
             {
               tag: "Step 3",
               title: "03",
-              subtitle: "Specialist Consultation & Options Review",
-              description: "Our orthodontist will examine your bite alignment, review your 3D digital images, and explain personalized treatment options in plain, clear language.",
+              subtitle: "Specialist Exam & Options",
+              description: "Our orthodontist examines your bite alignment, reviews your 3D digital images, and explains clear treatment options.",
               imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif?_wi=1",
             },
             {
               tag: "Step 4",
               title: "04",
-              subtitle: "Custom Plan & Financial Flexibility",
-              description: "We review your customized timeline, transparent pricing, insurance coverage, and flexible interest-free monthly payment options so you can decide with total confidence.",
+              subtitle: "Custom Plan & Financing",
+              description: "We review your personalized timeline, transparent pricing, insurance, and 0% interest payment options so you can decide with confidence.",
               imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/contact/contact.avif?_wi=2",
             },
           ]}
