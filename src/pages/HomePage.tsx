@@ -190,7 +190,7 @@ export default function HomePage() {
           textAnimation="slide-up"
           tag="Begin Your Journey"
           text="Ready to Request Your Orthodontic Consultation?"
-          primaryButton={{ text: "Book a Consultation Now", href: "/contact" }}
+          primaryButton={{ text: "Book a FREE Consultation Now", href: "/contact" }}
           secondaryButton={{ text: "Explore Your First Visit", href: "/first-visit" }}
         />
       </div>
