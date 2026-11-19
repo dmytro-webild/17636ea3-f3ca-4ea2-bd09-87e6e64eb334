@@ -11,7 +11,14 @@ interface NavbarInlineProps {
   ctaButton: { text: string; href: string };
 }
 
-const NavItem = ({ name, href, onClick }: { name: string; href: string; onClick?: () => void }) => {
+interface NavItemProps {
+  name: string;
+  href: string;
+  onClick?: () => void;
+  iconImage?: string;
+}
+
+const NavItem = ({ name, href, onClick, iconImage }: NavItemProps) => {
   const handleClick = useButtonClick(href, onClick);
   const location = useLocation();
   const isActive = location.pathname === href;
@@ -20,13 +27,20 @@ const NavItem = ({ name, href, onClick }: { name: string; href: string; onClick?
     <a
       href={href}
       onClick={handleClick}
-      className={`relative text-sm xl:text-base transition-colors duration-200 ${
+      className={`relative text-sm xl:text-base transition-colors duration-200 flex items-center gap-1.5 ${
         isActive
           ? "text-primary-cta font-medium after:w-full"
           : "text-foreground hover:text-primary-cta after:w-0"
       } after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary-cta after:transition-all after:duration-300 hover:after:w-full`}
     >
-      {name}
+      {iconImage && (
+        <img
+          src={iconImage}
+          alt=""
+          className="h-5 w-5 rounded-full object-cover shrink-0 inline-block"
+        />
+      )}
+      <span>{name}</span>
     </a>
   );
 };
@@ -58,7 +72,12 @@ const NavbarInline = ({ logo, logoImage, navItems, ctaButton }: NavbarInlineProp
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-6 xl:gap-8">
           {navItems.map((item) => (
-            <NavItem key={item.name} name={item.name} href={item.href} />
+            <NavItem
+              key={item.name}
+              name={item.name}
+              href={item.href}
+              iconImage={item.name === "Home" ? logoImage : undefined}
+            />
           ))}
         </div>
 
@@ -88,6 +107,7 @@ const NavbarInline = ({ logo, logoImage, navItems, ctaButton }: NavbarInlineProp
                 key={item.name}
                 name={item.name}
                 href={item.href}
+                iconImage={item.name === "Home" ? logoImage : undefined}
                 onClick={() => setMobileMenuOpen(false)}
               />
             ))}
