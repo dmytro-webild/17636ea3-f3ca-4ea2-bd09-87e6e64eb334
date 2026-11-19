@@ -70,8 +70,8 @@ export default function HomePage() {
             },
           ]}
           bottomItem={{
-            title: "Pediatric & Early Guidance",
-            description: "Proactive evaluation around age 7 to monitor jaw development, create room for erupting teeth, and simplify future treatment.",
+            title: "Digitally Placed Braces",
+            description: "Digitally placed braces use a 3D scan of your teeth (no gross molds!) and smart software to map the *exact* perfect spot for every bracket before treatment even starts. Think GPS for your smile instead of guesswork — more precision, fewer surprise adjustments, and a faster path to straight teeth. Science, meet your smile",
             imageSrc: "https://storage.googleapis.com/webild/default/templates/dentist/services/service2.avif?_wi=1",
             primaryButton: { text: "Explore Treatment Options", href: "/treatments" },
             avatarsSrc: [
