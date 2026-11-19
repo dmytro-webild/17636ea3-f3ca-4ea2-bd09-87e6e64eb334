@@ -112,8 +112,8 @@ We'll explore your smile goals, answer your questions, and provide complimentary
             },
             {
               icon: "CreditCard",
-              title: "Pre-Tax Benefit Cards",
-              value: "FSA/HSA",
+              title: "No credit check",
+              value: "No Credit Check",
             },
           ]}
         />
