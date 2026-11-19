@@ -58,7 +58,6 @@ export default function PricingPage() {
             {
               tag: "Orthodontic Re-Treatment",
               price: "Starting at $4,500",
-              highlight: "Most Popular Aesthetic Option",
               description: "or ~$129/month with 0% interest financing",
               features: [
                 "Previous Orthodontic Treatment Requiring Further Correction",
@@ -71,6 +70,7 @@ export default function PricingPage() {
             {
               tag: "Braces or Clear Aligners",
               price: "Starting at $6,500",
+              highlight: "Most Popular Aesthetic Option",
               description: "or ~$139/month with 0% interest financing",
               features: [
                 "Comprehensive Orthodontic treatment",
