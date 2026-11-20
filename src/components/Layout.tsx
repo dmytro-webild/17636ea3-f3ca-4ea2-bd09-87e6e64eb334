@@ -6,7 +6,7 @@ import NavbarInline from "@/components/ui/NavbarInline";
 
 export default function Layout() {
   return (
-    <StyleProvider buttonVariant="default" siteBackground="none" heroBackground="none">
+    <StyleProvider buttonVariant="default" siteBackground="aurora" heroBackground="none">
       <SiteBackgroundSlot />
       <NavbarInline
         logo=" "
