@@ -67,23 +67,23 @@ const PricingHighlightedCards = ({
         <GridOrCarousel>
           {plans.map((plan) => (
             <div key={plan.tag} className="flex flex-col h-full">
-              <div className={cls("px-5 py-2 text-base", plan.highlight ? "text-center primary-button rounded-t text-primary-cta-text" : "invisible")}>
+              <div className={cls("px-5 py-2 text-base font-semibold uppercase tracking-wider text-center", plan.highlight ? "bg-[#C89A53] text-white rounded-t shadow-sm" : "invisible")}>
                 {plan.highlight || "placeholder"}
               </div>
 
-              <div className={cls("flex flex-col items-center gap-4 xl:gap-5 2xl:gap-6 p-6 xl:p-7 2xl:p-8 flex-1 card text-center", plan.highlight ? "rounded-t-none rounded-b" : "rounded")}>
+              <div className={cls("flex flex-col items-center gap-4 xl:gap-5 2xl:gap-6 p-6 xl:p-7 2xl:p-8 flex-1 card text-center", plan.highlight ? "rounded-t-none rounded-b border-t-0" : "rounded")}>
                 <div className="flex flex-col gap-1">
-                  <span className="text-5xl md:text-6xl font-semibold">{plan.price}</span>
-                  <span className="text-base font-medium">{plan.tag}</span>
+                  <span className="text-5xl md:text-6xl font-extrabold text-[#0E2942]">{plan.price}</span>
+                  <span className="text-base font-semibold text-[#0E2942]">{plan.tag}</span>
                 </div>
 
-                <div className="h-px w-full bg-foreground/20" />
+                <div className="h-px w-full bg-foreground/15" />
 
                 <div className="flex flex-col gap-3 w-full">
                   {plan.features.map((feature) => (
                     <div key={feature} className="flex items-start gap-3">
-                      <div className="flex items-center justify-center shrink-0 size-6 primary-button rounded">
-                        <Check className="size-3 text-primary-cta-text" strokeWidth={2} />
+                      <div className="flex items-center justify-center shrink-0 size-6 bg-[#5BC889]/15 text-[#5BC889] rounded-full mt-0.5">
+                        <Check className="size-3 text-[#5BC889]" strokeWidth={2.5} />
                       </div>
                       <span className="text-base text-left">{feature}</span>
                     </div>
