@@ -17,8 +17,8 @@ const CheckList = ({ items, size = "sm", className }: CheckListProps) => (
   <div className={cls("flex flex-col gap-3", className)}>
     {items.map((item) => (
       <div key={item} className="flex items-center gap-3">
-        <div className="flex items-center justify-center shrink-0 size-6 primary-button rounded">
-          <Check className="size-3 text-primary-cta-text" strokeWidth={2} />
+        <div className="flex items-center justify-center shrink-0 size-6 bg-[#5BC889]/15 text-[#5BC889] rounded-full">
+          <Check className="size-3 text-[#5BC889]" strokeWidth={2.5} />
         </div>
         <span className={cls("leading-snug", textSizes[size])}>{item}</span>
       </div>

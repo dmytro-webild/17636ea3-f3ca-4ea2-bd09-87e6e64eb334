@@ -84,8 +84,8 @@ const PricingCenteredCards = ({
               <div className="flex flex-col gap-3 w-full">
                 {plan.features.map((feature) => (
                   <div key={feature} className="flex items-start gap-3">
-                    <div className="flex items-center justify-center shrink-0 size-6 primary-button rounded">
-                      <Check className="size-3 text-primary-cta-text" strokeWidth={2} />
+                    <div className="flex items-center justify-center shrink-0 size-6 bg-[#5BC889]/15 text-[#5BC889] rounded-full mt-0.5">
+                      <Check className="size-3 text-[#5BC889]" strokeWidth={2.5} />
                     </div>
                     <span className="text-base text-left">{feature}</span>
                   </div>
