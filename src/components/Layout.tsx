@@ -27,7 +27,6 @@ export default function Layout() {
       </main>
       <FooterSimple
         brand="Stillwater Orthodontics"
-        logoImage="https://storage.googleapis.com/webild/users/user_3MGLJMV28y8bVnP1IkR5dvWEUbT/uploaded-1795133587612-1d0578a6.png"
         columns={[
           {
             title: "Treatments & Fees",
