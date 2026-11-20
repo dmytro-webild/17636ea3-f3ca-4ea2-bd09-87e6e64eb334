@@ -39,11 +39,13 @@ const FooterBottomLink = ({ label, href, onClick }: FooterLink) => {
 
 const FooterSimple = ({
   brand,
+  logoImage,
   columns,
   copyright,
   links,
 }: {
-  brand: string;
+  brand?: string;
+  logoImage?: string;
   columns: FooterColumn[];
   copyright: string;
   links: FooterLink[];
@@ -52,7 +54,17 @@ const FooterSimple = ({
     <footer data-section="footer" aria-label="Site footer" className="w-full py-15 mt-20 bg-[#0E2942] text-white">
       <div className="w-content-width mx-auto">
         <div className="flex flex-col md:flex-row gap-10 md:gap-0 justify-between items-start mb-10">
-          <h2 className="text-4xl font-semibold text-white">{brand}</h2>
+          {logoImage ? (
+            <a href="/" className="inline-block shrink-0">
+              <img
+                src={logoImage}
+                alt={brand || "Stillwater Orthodontics"}
+                className="h-14 sm:h-16 md:h-20 w-auto object-contain"
+              />
+            </a>
+          ) : (
+            <h2 className="text-4xl font-semibold text-white">{brand}</h2>
+          )}
 
           <div className="w-full md:w-fit flex flex-wrap gap-y-10 md:gap-12">
             {columns.map((column) => (
